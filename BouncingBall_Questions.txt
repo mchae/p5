@@ -1,0 +1,27 @@
+##############################################################################
+# PyGame Bouncing Ball #2
+##############################################################################
+# import os
+# os.chdir('C:\\Apps\\Python\\MyPyGames')
+# 
+# 1. Make a bigger window (640 x 480).
+# 
+# 2. Make the ball move slower; speed = [1,1]
+# 
+# 3. Change the speed so that:
+#    a) the ball moves horizontally
+#    b) the ball moves vertically
+# 
+# 4. What happens if there is no boundary check?
+# 
+# 5. Change the background color to green.
+# 
+# 6. What happens if you blit the ball first and then fill the background?
+# 
+# 7. What happens if you blit the ball without erasing the background?
+# 
+# 8. Print events on a mouse click. (hint: MOUSEBUTTONDOWN).
+# 
+# 9. Do not paint when a mouse cliked and pressed down. (hint: MOUSEBUTTONUP)
+# 
+# 10. Toggle the ball movement on its click. (hint: pygame.mouse.get_pos())
