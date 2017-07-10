@@ -1,0 +1,49 @@
+
+##############################################################################
+# The Anatomy of a PyGame Game
+##############################################################################
+import pygame
+
+pygame.init()
+screen = pygame.display.set_mode((400, 300))
+done = False
+
+while not done:
+    for event in pygame.event.get():   
+        if event.type == pygame.QUIT:
+            done = True
+
+    pygame.display.flip()  
+                           
+# 1. Draw a light blue, color = (0, 128, 255), rectangle with the width and height of 30px at (30, 30) postion. 
+# (Hint: pygame.draw.rect())
+
+# 2. What if you put pygame.draw.rect() within the "for block" or the "if block"?
+
+# 3. Add the following code before the loop:
+is_blue = True
+
+# 4. Modify your rectangle code to pick a color conditionally:
+# aquamarine, orangish red
+if is_blue: color = (0, 128, 255)
+else: color = (255, 100, 0)
+
+# 5. Toggle the color between by pressing space key. 
+# (Hint: if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE: )
+
+# 6. What is pygame.K_SPACE mean? (Hint: print(pygame.K_SPACE), dir(pygame))
+# Can you get rid of pygame.K_SPACE and still toggle the color?
+
+# 7. From #5, what if you did not use the first condition, if event.type == pygame.KEYDOWN ?
+
+# 8. What is pygame.key.get_pressed() function for?  How can you check if UP arrow key is pressed? (Hint: Pygame.K_UP)
+#   for x in mylist:
+      if ('K_' in x):		print(x)
+      
+# 9. Can you move the rectangle by arrow keys, 3 px at one key down event?
+
+# 10. If you see smearing rectangle, how can you remove this? (Hint: screen.fill((0, 0, 0))
+
+# 11. The movement of rectangle is way too fast because the duration of each frame is super short.  
+# Can you make the framerate to be throttled at a sane number such as 60 frames per second? (Hint: clock.tick(60))
+      
